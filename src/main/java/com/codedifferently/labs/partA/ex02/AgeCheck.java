@@ -1,15 +1,20 @@
 package com.codedifferently.labs.partA.ex02;
 
+import java.util.Scanner;
+
 public class AgeCheck {
     public static String age(){
         String response= "";
 
-        int myAge = 19;   // I am 19; let me see if I can drive yet
+        Scanner in = new Scanner(System.in);
+        int myAge = 0;
+        System.out.println("Enter your age:");
+        myAge = in.nextInt();
 
         if (myAge >= 16) {
             response += ("I'm old enough to have a driver's license!");
         }
-        if (myAge <= 16) {
+        if (myAge < 16) {
             response += ("I'm not old enough yet... :*(");
         }
 

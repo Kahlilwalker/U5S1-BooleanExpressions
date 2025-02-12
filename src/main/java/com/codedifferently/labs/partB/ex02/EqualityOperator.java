@@ -6,7 +6,15 @@ public class EqualityOperator {
         String num1 = "4";
         String num2 = "5";
 
-        /* Your code goes here*/
+
+        if(num1.equals(num2)){
+            response += "true";
+        }
+
+        else{
+            response += "Are 4 and 5 equal? false";
+        }
+
 
 
         return response;
